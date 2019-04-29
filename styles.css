@@ -1,0 +1,125 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+header {
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	transition: 0.5s;
+}
+
+.give-bcc {
+	background-color: #212529;
+	transition: 0.5s;
+}
+.remove-margin {
+	padding: 0;
+	font-size: 1.5em;
+	transition: 0.5s;
+}
+
+header h1 {
+	color: #FED135;
+	font-family: cursive;
+	padding: 40px;
+	transition: 0.5s;
+}
+
+header ul {
+	display: flex;
+	list-style: none;
+	font-family: sans-serif;
+}
+
+li {
+	padding: 20px 10px;
+	color: white;
+	cursor: pointer;
+}
+
+li:hover {
+	color: #FED135;
+}
+
+section {
+	min-height: 99vh;
+}
+
+.hero {
+	background-image: url("https://blackrockdigital.github.io/startbootstrap-agency/img/header-bg.jpg");
+	background-size: cover;
+	height: 99vh;
+	width: 100vw;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.title1, .title2 {
+	color: white;
+	margin: 10px;
+	text-align: center;
+}
+
+.title1 {
+	font-size: 3em;
+}
+
+.title2 {
+	font-size: 5em;
+	font-family: sans-serif;
+}
+
+.hide-menu {
+	display: none;
+}
+
+.hide-menu img{
+	height: 16px;
+}
+
+button {
+	background-color: #FED135;
+	padding: 20px 30px;
+	margin: 20px;
+	font-size: 1em;
+	border: none;
+	color: white;
+	font-weight: bold;
+	border-radius: 5px;
+}
+
+@media (max-width: 990px) {
+	header ul {
+		display: none;
+	}
+	.hide-menu {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		padding: 10px;
+	}
+	header {
+		background-color: #212529;
+		justify-content: space-between;
+		padding: 0 10vw;
+	}
+	header h1 {
+		padding: 0;
+		font-size: 1.5em;
+	}
+
+}
+
+@media (max-width: 767px) {
+	section.hero {
+		height: 200px;
+	}
+}
