@@ -48,7 +48,7 @@ li:hover {
 }
 
 section {
-	min-height: 99vh;
+	min-height: 490px;
 }
 
 .hero {
@@ -96,6 +96,13 @@ button {
 	border-radius: 5px;
 }
 
+.hide-list{
+	display: none;
+	height: 0;
+	transition: 0.5s;
+}
+
+
 @media (max-width: 990px) {
 	header ul {
 		display: none;
@@ -105,6 +112,7 @@ button {
 		justify-content: center;
 		align-items: center;
 		padding: 10px;
+		margin: 5px;
 	}
 	header {
 		background-color: #212529;
@@ -114,12 +122,31 @@ button {
 	header h1 {
 		padding: 0;
 		font-size: 1.5em;
+		margin: 0;
+	}
+
+	.show-list {
+		display: block;
+		background-color: #212529;
+		transition: 0.5s;
+		position: fixed;
+		top: 45px;
+		width: 100%;
 	}
 
 }
 
 @media (max-width: 767px) {
-	section.hero {
-		height: 200px;
+	section {
+		min-height: 490px;
+	}
+
+	.title1 {
+		font-size: 1.5em;
+	}
+	
+	.title2 {
+		font-size: 3em;
+		font-family: sans-serif;
 	}
 }

@@ -6,21 +6,29 @@
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<title>Document</title>
 	<link rel="stylesheet" href="./styles.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 </head>
 <body>
 	<header>
 		<h1 id="logo">Start Bootstrap</h1>
-		<ul>
-			<li>SERVICES</li>
-			<li>PORTFOLIO</li>
-			<li>ABOUT</li>
-			<li>TEAM</li>
-			<li>CONTACT</li>
-		</ul>
-		<button class="hide-menu">
+		<button id="menu" class="hide-menu">
 			MENU <img src="https://cdn2.iconfinder.com/data/icons/mobile-and-web/100/menu1-512.png" alt="ham">
 		</button>
+		<ul>
+			<li class="list">SERVICES</li>
+			<li class="list">PORTFOLIO</li>
+			<li class="list">ABOUT</li>
+			<li class="list">TEAM</li>
+			<li class="list">CONTACT</li>
+		</ul>
 	</header>
+	<ul class="hide-list" id="links">
+			<li class="list2">SERVICES</li>
+			<li class="list2">PORTFOLIO</li>
+			<li class="list2">ABOUT</li>
+			<li class="list2">TEAM</li>
+			<li class="list2">CONTACT</li>
+		</ul>
 
 	<section class="hero">
 		<h1 class="title1">Welcome To our Studio!</h1>
@@ -28,7 +36,12 @@
 		<button>TELL ME MORE</button>
 	</section>
 
-	<section>SERVICES</section>
+	<section>
+		SERVICES
+		<div>
+			<i class="fas fa-shopping-cart"></i>
+		</div>
+	</section>
 
 	<section>PORTFOLIO</section>
 
